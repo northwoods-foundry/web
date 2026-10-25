@@ -86,7 +86,10 @@
   .split { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
   .person { display: flex; gap: 18px; align-items: flex-start; }
   .avatar { flex: none; width: 56px; height: 56px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font-weight: 700; font-size: 19px; }
-  .person h3 { margin: 2px 0 2px; font-size: 18px; }
+  .person h3 { margin: 2px 0 2px; font-size: 18px; display: flex; align-items: center; gap: 8px; }
+  .li { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 5px; color: var(--muted); transition: color 150ms ease; }
+  .li svg { width: 16px; height: 16px; }
+  @media (hover: hover) and (pointer: fine) { .li:hover { color: var(--accent); } }
   .role { color: var(--muted); margin: 0 0 12px; font-size: 15px; }
   .person p { margin: 0 0 10px; }
   .note { color: var(--muted); font-size: 15.5px; }
@@ -184,7 +187,7 @@
         <div class="person">
           <div class="avatar" aria-hidden="true">TA</div>
           <div>
-            <h3>Timothy Adams</h3>
+            <h3>Timothy Adams <a class="li" href="https://www.linkedin.com/in/timothydadams/" target="_blank" rel="noopener" aria-label="Timothy Adams on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a></h3>
             <p class="role">Founder &amp; Security Lead</p>
             <p>Tim builds and secures Meridian Data's software and is responsible for how customer data is protected.</p>
             <p class="note">As a resident of Winthrop, Maine, he gave public input on the town's AI use policy, urging staff training on keeping sensitive data out of AI tools (<a href="https://www.centralmaine.com/2025/07/28/winthrop-among-first-towns-in-maine-to-consider-ai-policy/">Kennebec Journal, July 2025</a>).</p>
