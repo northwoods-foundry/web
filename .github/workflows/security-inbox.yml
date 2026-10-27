@@ -1,0 +1,23 @@
+# Security inbox: keeps one issue in this repo, assigned to the owner, listing
+# security work that needs a decision (Dependabot alerts past their triage
+# window, stuck Dependabot PRs).
+# It comments when something new needs attention, which emails the assignee.
+# Logic: northwoods-foundry/.github, .github/workflows/security-inbox.yml.
+name: Security inbox
+
+on:
+  schedule:
+    - cron: '17 11 * * 1' # weekly, Mondays 11:17 UTC
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  inbox:
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: read
+      checks: read
+      vulnerability-alerts: read
+    uses: northwoods-foundry/.github/.github/workflows/security-inbox.yml@main
