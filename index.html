@@ -111,6 +111,7 @@
   .role { color: var(--muted); margin: 0 0 12px; font-size: 15px; }
   .person p { margin: 0 0 10px; }
   .note { color: var(--muted); font-size: 15.5px; }
+  .note strong { color: var(--ink); font-weight: 600; }
 
   dl { margin: 0; display: grid; gap: 18px; }
   dt { font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
@@ -217,29 +218,27 @@
   <section id="security">
     <div class="wrap">
       <h2>How we protect data</h2>
-      <p class="section-lede">Strong security shouldn&rsquo;t require an in-house IT department. We build protections into our software from the start. Here&rsquo;s how that works in Sextant Gov.</p>
+      <p class="section-lede">Strong security shouldn&rsquo;t require an in-house IT department. We build protections into our software from the start. Here&rsquo;s how we approach it, with Sextant Gov as the example.</p>
       <div class="grid">
         <div class="card">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
-          <h3>Passkeys, not passwords</h3>
-          <p>Sign-in uses cryptographic keys stored on your own devices, so there&rsquo;s no password to phish, reuse or leak.</p>
+          <h3>Stronger sign-in</h3>
+          <p>We favor modern sign-in, such as passkeys or your organization&rsquo;s single sign-on, over passwords.</p>
+          <p class="proof"><strong>In Sextant Gov:</strong> passkeys only, so there&rsquo;s no password to phish, reuse or leak.</p>
         </div>
         <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="7" height="16" rx="1.5"/><rect x="14" y="4" width="7" height="16" rx="1.5"/></svg></div>
-          <h3>Each customer kept separate</h3>
-          <p>Customer records are kept separate, with access restricted to the appropriate organization.</p>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>Public and private, by design</h3>
+          <p>We work with you to define what should be public, what must stay private and who can access it, then build those decisions into the software.</p>
+          <p class="proof"><strong>In Sextant Gov:</strong> the plan is public, but names, emails and phone numbers are hidden from anyone not signed in, and each town&rsquo;s records are kept separate.</p>
         </div>
         <div class="card">
-          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><path d="M4 4l16 16"/></svg></div>
-          <h3>Personal details kept from public view</h3>
-          <p>Names, emails and phone numbers are removed from everything shown to people who aren't signed in.</p>
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Security from the first line of code</h3>
+          <p>Credentials never live in the code, every change is scanned for leaked secrets before it ships, and dependencies are watched for known vulnerabilities.</p>
+          <p class="proof"><strong>In Sextant Gov:</strong> uploaded files are checked before use, and changes and access decisions are recorded with who made them.</p>
         </div>
       </div>
-      <ul class="details">
-        <li><strong>Uploads checked before use.</strong> File types are verified, encrypted and macro-enabled files are refused, and files containing sensitive personal data such as Social Security or card numbers are held back for review.</li>
-        <li><strong>Change history.</strong> Changes and access decisions are recorded with who made them.</li>
-        <li><strong>Checked on every change.</strong> Every change is scanned for leaked credentials before it ships, and dependencies are monitored for known vulnerabilities.</li>
-      </ul>
     </div>
   </section>
 
@@ -254,7 +253,7 @@
             <p class="role">Founder, Engineer &amp; Security Lead</p>
             <p>Tim Adams is a West Point graduate and former Army officer who brings an operations perspective to secure software development. During nine and a half years in uniform, he led teams and helped plan and coordinate military operations around the world, working through ambiguity in complex environments where protecting information was essential to the mission.</p>
             <p>After the Army, he spent four and a half years as a senior software engineer at Amentum, building applications that automated business processes, governed access, and replaced cumbersome manual workflows. He founded Meridian Data to bring those experiences together: making sense of complex problems, building software people can depend on, and treating security as part of the design from the start.</p>
-            <p class="note">As a resident of Winthrop, Maine, he gave public input on the town's AI use policy, urging staff training on keeping sensitive data out of AI tools (<a href="https://www.centralmaine.com/2025/07/28/winthrop-among-first-towns-in-maine-to-consider-ai-policy/">Kennebec Journal, July 2025</a>).</p>
+            <p class="note"><strong>In the news:</strong> Tim discussed the need for staff training to protect sensitive information when using AI tools. &mdash; <a href="https://www.centralmaine.com/2025/07/28/winthrop-among-first-towns-in-maine-to-consider-ai-policy/" target="_blank" rel="noopener">Kennebec Journal, July 2025</a></p>
           </div>
         </div>
       </div>
