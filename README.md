@@ -63,3 +63,7 @@ Then send a test email to `tim@meridiandata.tech` to confirm mail still arrives.
 - **`security.txt` expires `2027-10-24`.** Update the `Expires:` line before then: an expired file is treated as invalid. Keep it under a year out.
 - When a vulnerability disclosure policy page exists, add a `Policy:` line to `security.txt`.
 - Sextant Gov's own domains get their own `security.txt`: cpic-backend#1093 (AWS cutover).
+
+## To do
+
+- **Sextant Gov proof:** once a demo tenant with fixture data is running (a made-up town and people, never a real town's data), add a screenshot to the Sextant Gov card and a "Request a demo" link. Add the product link when sextantgov.com is live.
